@@ -29,7 +29,6 @@ export const LogoInitials = styled(Typography)`
 `;
 
 export const Chevrons = styled(Typography)`
-    //font-family: 'Herr Von Muellerhoff', cursive;
     color: black;
     font-size: 2.5rem;
     font-weight: 100;
@@ -54,10 +53,6 @@ export const NavLinks = styled(Typography)`
 export const LinksContainer = styled('div')`
     display: flex;
     justify-content: center;
-    @media (max-width: 480px) {
-            display: none;
-        }
-
 `;
 
 export const LogoContainer = styled('div')`
@@ -81,10 +76,4 @@ export const ResumeLink = styled('a')`
             margin:0;
         } 
 
-`;
-export const Hamburger = styled('div')`
-    display: flex;
-    @media (min-width: 480px) {
-            display: none;
-        } 
 `;

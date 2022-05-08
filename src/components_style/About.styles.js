@@ -1,6 +1,6 @@
 import React from "react";
 import { styled } from '@mui/material/styles';
-import { Container } from '@mui/material';
+import { Container, Typography } from '@mui/material';
 import { ReactComponent as Waves} from '../assets/waves.svg'
 
 export const IntroContainer = styled('div')`
@@ -156,4 +156,48 @@ export const WavesSVG = styled(Waves)`
         height: 10%;
         }
 
+`;
+
+export const ImageLabel = styled(Typography)`
+    text-align: center;
+    font-weight: bold;
+
+    @media (max-width: 480px) {
+            font-size:1.2rem;
+        }
+
+    @media (min-width: 751px ) and  (max-width: 1000px) {
+        font-size: 1.2rem;
+}
+
+    @media (min-height: 1440px){
+        font-size: 1.8rem;
+    }
+    
+`;
+
+export const LinkAttr = styled('a')`
+    text-decoration: none;
+    color: inherit;
+    
+`;
+
+export const ContactContain = styled(Container)`
+    margin-top: 50px;
+    
+`;
+
+
+export const ContactText = styled(Typography)`
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+
+    @media (max-width: 480px) {
+            font-size:1rem;
+        }
+
+    @media (min-height: 1440px){
+        font-size: 1.8rem;
+    }
 `;

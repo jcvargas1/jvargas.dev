@@ -107,48 +107,12 @@ export default function NavigationBar() {
                     </InitialsContainer>
                     <Chevrons style ={{color: checked ? 'black' : 'white'}}>&#10101;</Chevrons>
                 </LogoContainer>
-                <Hamburger>
-                <MaterialUISwitch checked = {checked} onChange={handleChange}/>
-                    <IconButton
-                    id="basic-button"
-                    aria-controls={open ? 'basic-menu' : undefined}
-                    aria-haspopup="true"
-                    aria-expanded={open ? 'true' : undefined}
-                    onClick={handleClick}>
-                        <MenuIcon /> 
-                    </IconButton>
-                    <Menu 
-                       id="basic-menu"
-                       anchorEl={anchorEl}
-                       open={open}
-                       onClose={handleClose}
-                       MenuListProps={{
-                         'aria-labelledby': 'basic-button',
-                       }}>
 
-                        <ResumeLink href='https://www.linkedin.com/in/jcvj/' style={{ textDecoration: 'none', color: checked ? 'black' : 'white' }}>
-                            <MenuItem onClick={handleClose}>
-                                Linkedin</MenuItem>
-                        </ResumeLink> 
-
-                        <ResumeLink href='https://github.com/jcvargas1' style={{ textDecoration: 'none', color: checked ? 'black' : 'white' }}>
-                            <MenuItem onClick={handleClose}>Github</MenuItem>
-                        </ResumeLink>
-
-                        <ResumeLink href={Resume} download="Juan_Vargas_Resume.pdf" target="_blank" style={{ textDecoration: 'none', color: checked ? 'black' : 'white' }}>
-                            <MenuItem onClick={handleClose}> Resume</MenuItem>
-                        </ResumeLink>
-                        
-                        <ResumeLink href='mailto:juan@jvargas.dev' target="_blank" style={{ textDecoration: 'none', color: checked ? 'black' : 'white' }}>
-                            <MenuItem onClick={handleClose}>Contact</MenuItem>
-                        </ResumeLink>
-                    </Menu>
-                </Hamburger>
                 <LinksContainer>
-                    <ResumeLink href='https://github.com/jcvargas1' target="_blank" style={{ textDecoration: 'none', color: checked ? 'black' : 'white' }}>Github</ResumeLink>
+                    {/* <ResumeLink href='https://github.com/jcvargas1' target="_blank" style={{ textDecoration: 'none', color: checked ? 'black' : 'white' }}>Github</ResumeLink>
                     <ResumeLink href='https://www.linkedin.com/in/jcvj/' target="_blank" style={{ textDecoration: 'none', color: checked ? 'black' : 'white' }}>Linkedin</ResumeLink>
                     <ResumeLink href='../assets/Juan_Vargas_Resume.pdf' download style={{ textDecoration: 'none', color: checked ? 'black' : 'white' }}>Resume</ResumeLink>
-                    <ResumeLink href='mailto:juan@jvargas.dev' style={{ textDecoration: 'none', color: checked ? 'black' : 'white' }}>Contact</ResumeLink>
+                    <ResumeLink href='mailto:juan@jvargas.dev' style={{ textDecoration: 'none', color: checked ? 'black' : 'white' }}>Contact</ResumeLink> */}
                     <MaterialUISwitch checked = {checked} onChange={handleChange} />
                 </LinksContainer>
                 
